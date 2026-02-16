@@ -1,0 +1,87 @@
+PROJECT_NAME           = "Поездная система"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Документация по классам вагонов и поездов"
+PROJECT_LOGO           =
+OUTPUT_DIRECTORY       = docs
+
+OUTPUT_LANGUAGE        = Russian
+
+RECURSIVE              = YES
+
+INPUT                  = . \
+                         simple_class.hpp \
+                         complex_class.hpp
+
+FILE_PATTERNS          = *.hpp \
+                         *.cpp \
+                         *.h
+
+EXCLUDE                = catch2/ \
+                         Catch2/ \
+                         third_party/ \
+                         libs/ \
+                         libraries/ \
+                         external/ \
+                         vendor/ \
+                         build/ \
+                         cmake-build-*/ \
+                         .git/ \
+                         docs/ \
+                         tests/ \
+                         test/
+
+EXCLUDE_PATTERNS       = */catch2/* \
+                         */Catch2/* \
+                         */third_party/* \
+                         */libs/* \
+                         */libraries/* \
+                         */external/* \
+                         */vendor/* \
+                         */.git/* \
+                         */build/* \
+                         */cmake-build-*/* \
+                         */docs/* \
+                         */tests/* \
+                         */test/* \
+                         */obj/* \
+                         */bin/*
+
+EXCLUDE_SYMLINKS       = YES
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+UML_LOOK               = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_EXTRA_STYLESHEET  =
+HTML_COLORSTYLE_HUE    = 220
+HTML_TIMESTAMP         = YES
+
+GENERATE_LATEX         = NO
+
+GENERATE_RTF           = NO
+
+GENERATE_MAN           = NO
+
+GENERATE_XML           = NO
+
+OPTIMIZE_OUTPUT_FOR_C  = NO
+CPP_CLI_SUPPORT        = NO
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = YES
+
+ALPHABETICAL_INDEX     = YES
+
+MAX_DOT_GRAPH_DEPTH    = 3
+
+DOT_CAPTION            = YES
